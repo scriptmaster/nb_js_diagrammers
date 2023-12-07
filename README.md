@@ -11,15 +11,13 @@ Simple magics for rendering diagrams from line and cell magics using the followi
 
 ## Installation
 
-Install from PyPi as: `pip install --upgrade nb-js-diagrammers`
-
 Install direct from this repository as:
 
-`pip install --upgrade git+https://github.com/innovationOUtside/nb_js_diagrammers.git`
+`pip install --upgrade git+https://github.com/scriptmaster/nb_js_diagrammers.git`
 
 or:
 
-`pip install --upgrade https://github.com/innovationOUtside/nb_js_diagrammers/archive/main.zip`
+`pip install --upgrade https://github.com/scriptmaster/nb_js_diagrammers/archive/main.zip`
 
 ## Usage
 
