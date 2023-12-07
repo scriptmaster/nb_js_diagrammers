@@ -128,9 +128,9 @@ class JSdiagrammerMagics(Magics):
         "--height", "-h", default="300", help="IFrame height."
     )
     @needs_local_scope
-    def mermaid_magic(self, line, cell=None, local_ns=None):
+    def mermaidjs(self, line, cell=None, local_ns=None):
         "Send code to mermaid.js."
-        args = magic_arguments.parse_argstring(self.mermaid_magic, line)
+        args = magic_arguments.parse_argstring(self.mermaidjs, line)
         src = eval(args.src, None, local_ns) if args.src else cell
         diagram = JSDiagram({"src":src.strip()}, TEMPLATE_MERMAIDJS, height=args.height)
         if args.outfile:
