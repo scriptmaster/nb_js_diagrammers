@@ -29,7 +29,7 @@ All magics support a `-o / --outfile` that can be used to specify the name of a 
  
 You can then generate diagrams using the appropriate diagram syntax and block magic.
 
-The `flowchart_magic`, `mermaid_magic` and `wavedrom_magic` also act as line magics. Put the diagram script into a variable (`my_script`) then call as `%mermaid_magic --src my_script -h 1000` etc.
+The `flowchart_magic`, `mermaidjs` and `wavedrom_magic` also act as line magics. Put the diagram script into a variable (`my_script`) then call as `%mermaidjs --src my_script -h 1000` etc.
 
 __Note that for block magics, the code cell MUST start the `%%` - even blank lines and comment lines preceding the the block magic will raise an error.__
 
@@ -60,7 +60,7 @@ op2(path2, right)->e
 ![](images/js_diag_magic_wavedrom.png)
 
 ```text
-%%mermaid_magic -h 500
+%%mermaidjs -h 500
 
 flowchart TD
     A[Start] --> B{Is it?};
@@ -73,7 +73,7 @@ flowchart TD
 ![](images/js_diag_magic_mermaid0.png)
 
 ```text
-%%mermaid_magic -h 250
+%%mermaidjs -h 250
 
 graph TD;
     A-->B;
@@ -85,7 +85,7 @@ graph TD;
 ![](images/js_diag_magic_mermaid1.png)
 
 ```text
-%%mermaid_magic -h 350
+%%mermaidjs -h 350
 
 sequenceDiagram
     Alice->>John: Hello John, how are you?
@@ -96,7 +96,7 @@ sequenceDiagram
 ![](images/js_diag_magic_mermaid2.png)
 
 ```text
-%%mermaid_magic -h 330
+%%mermaidjs -h 330
 
 erDiagram
     CUSTOMER ||--o{ ORDER : places
